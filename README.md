@@ -5,15 +5,17 @@ The main idea behind file compression is allocate less memory to more frequent c
 ### Steps
 
 <!-- prettier-ignore -->
-1. Compressing the file
+<ol>
+<li>Compressing the file</li>
 <ol type="a">
-     <li> Store the frequency of all characters in a map</li>
-      <li> Sort the keys based on their frequency in non-decreasing order</li>
-     <li> Assign unique binary sequence to every key</li>
-     <li> Store these binary sequence in form of bits </li>
+<li> Store the frequency of all characters in a map</li>
+<li> Sort the keys based on their frequency in non-decreasing order</li>
+<li> Assign unique binary sequence to every key</li>
+<li> Store these binary sequence in form of bits </li>
 </ol>
-2. Decompressing the file
+<li> Decompressing the file</li>
 <ol type="a">
      <li> Read the file in the same order as before</li>
      <li> Replace the binary code into characters using the map</li>
+</ol>
 </ol>
